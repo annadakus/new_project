@@ -1,0 +1,479 @@
+$font-main: 'Montserrat', sans-serif
+$nav-bgcolor: #222
+$main-color: #46cf1d
+$btn-color: #5cb85c
+$title-color: #ffffff
+
+
+body
+	margin: 0
+	padding-top: 50px
+	font-family: $font-main
+
+/*navigation*/
+
+.top-menu-content 
+	text-transform: uppercase
+
+
+.navbar
+	height: 50px
+
+
+.navbar-fixed-top 
+	.navbar-collapse
+		background-color: $nav-bgcolor
+
+
+.top-menu-button
+	color: white
+	text-align: center
+	transition: color 0.7s
+	&:hover
+		color: $main-color
+		
+
+
+
+.navbar-inverse 
+	.navbar-collapse 
+		.navbar-nav
+			li
+				.top-menu-button
+					color: white
+					text-align: center
+					background-color: $nav-bgcolor
+					&:hover
+						color: $main-color
+
+
+
+
+/*main background image*/
+
+.main-image
+	left: 0px
+	top: 0px
+	overflow: auto
+	margin: 0px
+	padding: 0px
+	min-height: 720px
+	width: 100%
+	z-index: -999998
+	position: absolute
+
+.back-image
+	position: absolute
+	margin: 0px
+	padding: 0px
+	border: none
+	width: 100%
+	height: 100%
+	z-index: -999999
+   
+
+
+/*   title page*/
+
+h1
+	font-weight: 800
+	text-transform: uppercase
+	font-family: $font-main
+	margin-top: 50px
+	font-size: 40px
+
+
+.page-title 
+	padding: 180px 0 210px 0
+
+
+.page-title-text 
+	width: 700px
+	margin: 0 auto
+	p
+		margin-top: 20px
+		font-size: 22px
+		line-height: 36px
+		text-shadow: 0 1px 5px rgba(51, 51, 51, 0.4)
+
+.main-bottom 
+	padding-top: 25px
+	padding-bottom: 7px
+	&:focus
+		outline: none
+
+
+a.title-btn
+	background-color: transparent
+	color: $title-color
+	text-decoration: none
+	font-size: 18px
+	border: 2px solid white
+	border-radius: 7px
+	transition: color 0.5s
+		
+
+/*about*/
+.about-title
+	h1
+		text-align: left
+
+
+span 
+	h2
+		position: absolute
+		top: 30%
+		left: 25%
+		font-family: 'Oleo Script', cursive
+		font-size: 3.5em
+		text-shadow: 1px 1px 2px white, 0 0 1em lightgreen
+		color: #3d8704
+
+
+
+.info-block
+	width: 90%
+	margin: 0 auto
+	background-color: #F8F8FF
+	border-radius: 10px
+	padding: 5px
+	margin-bottom: 15px
+
+
+.block
+	width: 80px
+	height: 80px
+	border-radius: 40px
+	background-color: $main-color
+	margin-right: auto
+	margin-left: auto
+	text-align: center
+	padding-top: 5%
+	margin-top: 15px
+
+.we-do-text
+	padding: 10px
+	p
+		overflow: hidden
+		max-height: 120px
+		font-family: $font-main
+
+
+.we-do-title 
+	font-size: 26px
+	font-weight: 700
+	color: #888
+	line-height: 30px
+	text-transform: uppercase
+	text-align: center
+
+
+.clients
+	background-color: #e6ffe6
+	width: 100%
+	margin-top: 50px
+	margin-bottom: 20px
+	height: 150px
+	padding-top: 10px
+ 
+
+.flex-container
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+
+
+.block-2
+	margin: 70px 0 15px 0
+
+
+.img1
+	border-radius: 0 0 50px 0
+	margin-right: 10px
+
+
+.img2
+	border-radius: 0 0 0 50px
+	margin-left: 10px
+
+
+ul
+	li
+		list-style-type: none
+		margin-left: 0
+
+
+.list
+	margin: 5px 15px 5px 5px
+	line-height: 2.5
+
+
+.block-2-right
+	background-color: #e6ffe6
+	width: 100%
+	margin-top: 50px
+	margin-bottom: 20px
+	padding: 40px 0 40px 0
+
+
+/*registration*/
+
+.reg-form
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+
+.input-text-label 
+	margin-top: 10px
+	margin-bottom: 10px
+	text-transform: uppercase
+	font-size: 9pt
+	padding: 15px 5px 0 5px
+
+label.required:before
+	color: red
+	content: "* "
+	font-size: 16px
+	
+input 
+	margin-top: 5px
+	margin-bottom: 5px
+	display: block
+	width: 270px
+	height: 42px
+	border: 1px solid #96ea9e
+	outline: none
+	border-radius: 3px
+	box-shadow: 0px 0px 2px 0px #51db5e
+	font-size: 11pt
+	color: #6e768f
+	padding-left: 20px
+	padding-right: 50px
+
+.select-form
+	@extend input
+
+
+.code
+	width: 70px
+	padding-left: 15px
+	padding-right: 5px
+
+
+.number
+	width: 160px
+	margin-left: 20px
+
+
+.registr 
+	background-color: #e6ffe6
+	border-radius: 30px
+	margin-bottom: 20px
+	padding-left: 70px
+	padding-right: 70px  
+
+
+.btn-reg 
+	width: 250px
+	margin-top: 30px
+	margin-bottom: 40px
+	text-transform: uppercase
+	&:focus
+		outline: none
+
+
+.wrong-input
+	color: red
+	font-size: 10px
+	margin: 0
+	position: absolute
+
+.ref
+	color: red
+	margin: -20px 0 10px 10px
+
+
+/*blog*/
+
+.blog-item 
+	margin: 10px 5px 10px 5px
+	background-color: #F8F8FF
+	border: 1px solid $btn-color
+	border-radius: 10px
+	padding: 5px
+	margin-bottom: 15px
+	text-align: center
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	align-items: center
+	overflow: hidden
+	h3
+		height: 55px
+		overflow: hidden
+	p
+		max-height: 280px
+		overflow: hidden
+	.blog-deployed
+		transition: max-height 1s
+		max-height: none
+	.blog-img
+		max-width: 300px
+
+	.blog-btn 
+		border-radius: 10px
+		color: $btn-color
+		border: 1px solid #96ea9e
+		transition: color 1s
+		&:hover
+			color: $title-color
+			background-color: $btn-color
+		&:focus
+			outline: none
+		
+
+.btnToTop
+	position: fixed
+	bottom: 20px
+	right: 20px
+	width: 50px
+	height: 50px 
+	cursor: pointer
+	.fa 
+		font-size: 48px  
+/*footer*/
+.footer
+	@extend .flex-container
+	background-color: $nav-bgcolor
+	min-height: 150px
+	margin-top: 50px
+	margin-bottom: 0
+	overflow: hidden
+
+
+.contact 
+	padding-bottom: 5px
+	padding-top: 10px
+
+h4
+	color: $main-color
+	text-transform: uppercase
+	padding-bottom: 15px
+
+
+.social-contacts 
+	padding-left: 0
+	a
+		text-decoration: none
+		color: $title-color
+		&:hover
+			color: $main-color
+	li
+		font-size: 12px
+		line-height: 1.5
+		color: $title-color
+
+.fa
+	color: $main-color
+	font-size: 16px
+	margin-right: 12px
+
+.city-contact 
+	margin-left: 20%
+
+
+@media (min-width: 992px) and (max-width: 1199px) 
+	.registr 
+		padding-left: 40px
+		padding-right: 40px  
+	.page-title 
+		padding-top: 140px
+		padding-bottom: 120px 
+	
+	.blog-img
+		max-width: 260px
+
+@media (min-width: 768px) and (max-width: 991px) 
+	.main-image
+		min-height: 550px
+	
+	
+	.page-title
+		padding-top: 120px
+		padding-bottom: 100px
+	
+	.page-title-text
+		width: 600px
+		p
+			font-size: 20px
+			color: $title-color
+	.registr 
+		padding-left: 30px
+		padding-right: 30px 
+	
+	.blog-img
+		max-width: 260px
+	
+
+
+@media (max-width: 767px) 
+	.main-image
+		min-height: 450px
+	
+		
+	.page-title
+		padding-top: 80px
+		padding-bottom: 80px
+	
+	.page-title-text 
+		width: 100%
+		padding-left: 15px
+		padding-right: 15px
+		p
+			font-size: 16px
+			color: $title-color
+			line-height: 1.5
+	
+	h1
+		font-size: 22px
+		
+	
+	.main-bottom
+		padding-top: 20px
+		padding-bottom: 2px
+	
+	.clients
+		height: 300px
+	
+	.img1, .img2
+		max-width: 345px
+	
+	.blog-img
+		max-width: auto
+	
+	h4
+		font-size: 15px
+	.reg-form
+		justify-content: center
+
+
+
+@media (max-width: 415px) 
+	.main-image
+		min-height: 450px
+
+	h1, h2 
+		font-size: 24px
+	
+	.clients
+		height: 300px
+	
+	.img1, .img2
+		max-width: 290px
+	
+	.blog-img
+		max-width: 230px
+	.reg-form
+		justify-content: center
+	
